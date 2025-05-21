@@ -50,6 +50,13 @@ body main {
     gap: 108px;
 
     & .desc {
+
+        & .info-group {
+            display: flex;
+            flex-direction: column;
+            gap: 36px;
+        }
+
         & #online {
             font: 700 16px/150% "Roboto Mono", sans-serif;
             background: linear-gradient(to right, #C7C9CC, #3D3D3D);
@@ -69,7 +76,6 @@ body main {
             gap: 8px;
 
             & div:nth-child(2) {
-                margin-bottom: 36px;
 
                 & span {
                     font: 500 14px/150% "Roboto Flex", sans-serif;
@@ -85,6 +91,8 @@ body main {
     }
 
     & aside {
+        display: flex;
+        align-items: center;
         & .quero-sortear {
             & h2 {
                 font: 700 20px/150% "Roboto Flex", sans-serif;
