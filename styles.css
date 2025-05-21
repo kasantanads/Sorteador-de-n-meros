@@ -1,0 +1,275 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 76px 120px;
+    height: 100vh;
+    background: black url("img/Shapes.png") center/cover no-repeat;
+
+    & #logo {
+        padding-bottom: 89px;
+        display: flex;
+        align-items: center;
+        gap: 11px;
+
+        & span {
+            font: 800 24px/130% "Sora", sans-serif;
+            color: #FFFFFF;
+        }
+    }
+
+    & .mobile-only {
+        display: none;
+    }
+
+    & .mobile-only .info-mobile span {
+        font: 500 14px/150% "Roboto Flex", sans-serif;
+        color: #C58DE7;
+    }
+
+    & .mobile-only .info-mobile p {
+        font: 500 12px/150% "Roboto Flex", sans-serif;
+        color: #C7C9CC;
+    }
+
+    & .mobile-only .info-mobile {
+        display: flex;
+        gap: 8px;
+    }
+
+    & .display-none{
+        display: none;
+    }
+}
+
+body main {
+    display: flex;
+    gap: 108px;
+
+    & .desc {
+        & #online {
+            font: 700 16px/150% "Roboto Mono", sans-serif;
+            background: linear-gradient(to right, #C7C9CC, #3D3D3D);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        & h1 {
+            font: 800 72px/130% "Sora", sans-serif;
+            letter-spacing: -4px;
+            color: #FFFFFF;
+            padding-bottom: 38px;
+        }
+
+        & .info {
+            display: flex;
+            gap: 8px;
+
+            & div:nth-child(2) {
+                margin-bottom: 36px;
+
+                & span {
+                    font: 500 14px/150% "Roboto Flex", sans-serif;
+                    color: #C58DE7;
+                }
+
+                & p {
+                    font: 500 12px/150% "Roboto Flex", sans-serif;
+                    color: #C7C9CC;
+                }
+            }
+        }
+    }
+
+    & aside {
+        & .quero-sortear {
+            & h2 {
+                font: 700 20px/150% "Roboto Flex", sans-serif;
+                color: #FFFFFF;
+            }
+
+            & p {
+                font: 500 16px/150% "Roboto Flex", sans-serif;
+                color: #C7C9CC;
+                margin-bottom: 40px;
+            }
+
+            & .label-input {
+                font: 700 16px/150% "Roboto Flex", sans-serif;
+                color: #C7C9CC;
+            }
+
+            & .input-group {
+                display: flex;
+                gap: 12px;
+            }
+
+            & .input-bg {
+                display: flex;
+                flex-direction: column;
+                gap: 12px;
+                width: 86px;
+                height: 56px;
+                padding: 4px 8px;
+                text-align: center;
+
+                background-color: #111012;
+                color: #FFFFFF;
+                font: 700 32px/150% "Sora", sans-serif;
+
+                border: none;
+                border-radius: 8px;
+
+                /* Remove setas de input number */
+                &::-webkit-inner-spin-button,
+                ::-webkit-outer-spin-button {
+                    -webkit-appearance: none;
+                    margin: 0;
+                }
+            }
+
+            & .switch {
+                margin-top: 20px;
+                display: flex;
+                gap: 8px;
+
+                & strong {
+                    font: 400 12px/150% "Inter", sans-serif;
+                    color: #FFFFFF;
+                    
+                }
+            }
+
+            & .sortear-btn {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 8px;
+
+                width: 100%;
+                height: 56px;
+                margin-top: 40px;
+
+                background-color: #24222E;
+                border: none;
+                border-radius: 8px;
+                cursor: pointer;
+
+                & strong {
+                    font: 700 16px/150% "Roboto Flex", sans-serif;
+                    color: #FFFFFF;
+                }
+            }
+
+            & .sortear-btn:hover {
+                background-color: #111012;
+            }
+        }
+
+    }
+}
+
+.resultado-sorteio {
+    padding-block: 59px;
+    display: flex;
+    flex-direction: column;
+
+    & #result {
+        padding-inline: 124.5px;
+        font: 700 20px/150% "Roboto Flex", sans-serif;
+        color: #FFFFFF;
+        width: max-content;
+    }
+
+    & .numeros-sorteados {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 4px;
+        margin-block: 40px;
+
+        & span {
+            font: 700 48px/150% "Roboto Mono", sans-serif;
+            color: #C58DE7;
+            padding: 7px 13px;
+        }
+    }
+
+    & .sortear-btn-novamente {
+        height: 56px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+
+        background-color: #24222E;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+
+        & strong {
+            font: 700 16px/150% "Roboto Flex", sans-serif;
+            color: #FFFFFF;
+            }
+        }
+
+    & .sortear-btn-novamente:hover {
+        background-color: #111012;
+    }
+}
+
+@media (width < 435px) {
+
+    body {
+        padding: 0px;
+
+        & .mobile-only {
+            display: block;
+        }
+
+        & #logo {
+            align-items: center;
+            justify-content: center;
+            padding-block: 44px 46px;
+        }
+    }
+
+    body main {
+        display: flex;
+        flex-direction: column;
+        gap: 42px;
+        justify-content: center;
+        padding-inline: 35px;
+
+        & .desc {
+
+            & #online {
+                padding-bottom: 8px;
+            }
+
+            & h1 {
+                font: 800 40px/130% "Sora", sans-serif;
+                letter-spacing: -2px;
+                color: #FFFFFF;
+                padding: 0px;
+            }
+
+            & .info {
+                display: none; 
+            }
+        }
+
+        & .sorteio .resultado-sorteio {
+            display: flex;
+            align-items: center;
+        }
+
+
+        & .sorteio .resultado-sorteio .sortear-btn-novamente {
+            width: 100%;
+        }
+    }
+}
