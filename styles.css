@@ -93,6 +93,7 @@ body main {
     & aside {
         display: flex;
         align-items: center;
+
         & .quero-sortear {
             & h2 {
                 font: 700 20px/150% "Roboto Flex", sans-serif;
@@ -198,6 +199,7 @@ body main {
         justify-content: center;
         gap: 4px;
         margin-block: 40px;
+        flex-wrap: wrap;
 
         & span {
             font: 700 48px/150% "Roboto Mono", sans-serif;
@@ -251,12 +253,12 @@ body main {
     body main {
         display: flex;
         flex-direction: column;
+        align-items: center;
         gap: 42px;
         justify-content: center;
         padding-inline: 35px;
 
         & .desc {
-
             & #online {
                 padding-bottom: 8px;
             }
@@ -278,9 +280,8 @@ body main {
             align-items: center;
         }
 
-
         & .sorteio .resultado-sorteio .sortear-btn-novamente {
-            width: 100%;
+            padding-inline: 35px;
         }
     }
 }

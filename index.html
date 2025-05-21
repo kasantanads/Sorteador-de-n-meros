@@ -50,17 +50,17 @@
                 <div class="input-group">
                     <label for="quantidade-números">
                         <strong class="label-input">NÚMEROS</strong>
-                        <input class="input-bg" type="number" required id="quantidade-números" name="quantidade-números" value="2">
+                        <input class="input-bg" type="number" required id="quantidade-números" name="quantidade-números" value="2" min="1" max="10">
                     </label>
 
                     <label for="intervalo-inicial">
                         <strong class="label-input">DE</strong>
-                        <input class="input-bg" type="number" required id="intervalo-inicial" name="intervalo-inicial" value="1">
+                        <input class="input-bg" type="number" required id="intervalo-inicial" name="intervalo-inicial" value="1" min="1" max="99">
                     </label>
 
                     <label for="intervalo-final">
                         <strong class="label-input">À</strong>
-                        <input class="input-bg" type="number" required id="intervalo-final"      name="intervalo-final" value="100">
+                        <input class="input-bg" type="number" required id="intervalo-final"      name="intervalo-final" value="100" min="2" max="100">
                     </label>
                 </div>
 
@@ -76,8 +76,8 @@
                 <div class="resultado-sorteio">
                     <strong id="result">RESULTADO DO SORTEIO</strong>
                     <div class="numeros-sorteados">
-                        <span>23</span>
-                        <span>12</span>
+                    <!--<span>23</span>
+                        <span>12</span> -->
                     </div>
                     <button class="sortear-btn-novamente"><strong>SORTEAR NOVAMENTE</strong><img src="img/again.svg"alt=""></button>
                 </div>
@@ -102,6 +102,8 @@
             </div>
         </div>
     </main>
+
+    <script src="scripts.js"></script>
 </body>
 
 </html>
