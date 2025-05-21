@@ -235,7 +235,10 @@ body main {
         padding: 0px;
 
         & .mobile-only {
-            display: block;
+            display: flex;
+            flex-direction: column;
+            gap: 36px;
+            padding-bottom: 44px;
         }
 
         & #logo {
